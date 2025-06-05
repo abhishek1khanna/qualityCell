@@ -1,0 +1,6 @@
+docker build --no-cache -t qualitycell .
+
+docker tag qualitycell tensazangetsu1/qualitycell
+
+docker push tensazangetsu1/qualitycell
+xcopy .\dist\ ..\backend\dist /E/H/C/I
